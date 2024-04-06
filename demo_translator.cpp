@@ -18,11 +18,12 @@ public:
     virtual void Update(AtNode* polymesh);
     static void* creator();
 
+
+private:
     void Export(AtNode* polymesh, bool update);
     void ExportMesh(AtNode* polymesh);
     void ExportMeshShaders(AtNode* polymesh);
 
-private:
     void ExportMeshPoints(AtNode* polymesh);
     void ExportMeshNormals(AtNode* polymesh);
     void ExportMeshUVs(AtNode* polymesh);
